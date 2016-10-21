@@ -7,7 +7,7 @@
 
 WEBサイト : http://www.nurve.jp/
 
-VR賃貸動画 : https://www.youtube.com/watch?v=GwPFJ75G9UQ
+VR賃貸動画 : https://youtu.be/GwPFJ75G9UQ
 
 # 開発環境
 - Unity 5.3.1
