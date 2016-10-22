@@ -12,6 +12,11 @@ public class SkyBoxController : MonoBehaviour {
 		// Wait for download to complete
 		yield return www;
 
+		if(!string.IsNullOrEmpty(www.error)){
+			Debug.LogError("www Error:" + www.error);
+			yield break;
+		}
+
 		// assign texture
 		Renderer renderer = GetComponent<Renderer>();
 		renderer.material.mainTexture = www.texture;
