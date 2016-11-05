@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class RoomLayout : MonoBehaviour {
 
 	private string path = "https://salty-fortress-26407.herokuapp.com/uxsers/9.json";
+	public static string url = null;
 
 	//カメラオブジェクト
 	public GameObject MainCamera;
@@ -28,6 +29,10 @@ public class RoomLayout : MonoBehaviour {
 			var jsonDict = Json.Deserialize(www.text) as Dictionary<string,object>;
 			Debug.Log("id = " + jsonDict["id"]);
 			Debug.Log("gazo_url = " + jsonDict["gazo_url"]);
+			url = jsonDict ["gazo_url"].ToString ();
+			GameObject instance = Instantiate (Resources.Load ("SphereMovie")) as GameObject;
+			instance.transform.position = new Vector3 (0.0f, 0.0f, 0.0f);
+
 			var jsonDict2 = jsonDict ["zahyo"] as Dictionary<string,object>;
 			Debug.Log("x = " + jsonDict2["x"]);
 			Debug.Log("y = " + jsonDict2["y"]);
