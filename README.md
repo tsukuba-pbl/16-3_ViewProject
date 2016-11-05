@@ -9,6 +9,8 @@ WEBサイト : http://www.nurve.jp/
 
 VR賃貸動画 : https://youtu.be/GwPFJ75G9UQ
 
+![ロゴ](http://res.cloudinary.com/hm9te9vxa/image/upload/v1478356296/p7ztiletx3pzr74zenck.png)
+
 # 開発環境
 - Unity 5.3.1
 - Android Studio 1.0 and 2.0
@@ -24,4 +26,11 @@ VR賃貸動画 : https://youtu.be/GwPFJ75G9UQ
 1. アプリをスマートフォンに入れる
 1. アプリを起動する
 1. 専用のゴーグルにスマートフォンをセットする
+
+# サーバ
+- heroku https://salty-fortress-26407.herokuapp.com/uxsers/
+- cloudinary 全天球画像用ファイルサーバ
+
+# 全天球画像 サンプル
+![全天球画像](http://res.cloudinary.com/hm9te9vxa/image/upload/v1477538556/ojkmrjystcgtfqxu2fvw.jpg)
 
