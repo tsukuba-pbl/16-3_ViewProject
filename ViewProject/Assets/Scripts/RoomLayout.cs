@@ -7,6 +7,9 @@ public class RoomLayout : MonoBehaviour {
 
 	private string path = "https://salty-fortress-26407.herokuapp.com/uxsers/9.json";
 
+	//カメラオブジェクト
+	public GameObject MainCamera;
+
 	// Use this for initialization
 	IEnumerator Start () {
 
@@ -30,8 +33,17 @@ public class RoomLayout : MonoBehaviour {
 			Debug.Log("y = " + jsonDict2["y"]);
 			Debug.Log("z = " + jsonDict2["z"]);
 			Debug.Log("offset = " + jsonDict["offset"]);
+
+			//カメラの位置を変更
+			float x = float.Parse(jsonDict2["x"].ToString());
+			float y = float.Parse(jsonDict2["y"].ToString());
+			float z = float.Parse(jsonDict2 ["z"].ToString());
+			Vector3 cameraPos = new Vector3(x, y, z);
+			SetCameraPos (cameraPos);
 		}
+	}
 
-
+	void SetCameraPos(Vector3 p){
+		MainCamera.transform.position = p;
 	}
 }
