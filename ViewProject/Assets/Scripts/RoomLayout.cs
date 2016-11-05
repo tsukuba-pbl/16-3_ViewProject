@@ -30,8 +30,6 @@ public class RoomLayout : MonoBehaviour {
 			Debug.Log("id = " + jsonDict["id"]);
 			Debug.Log("gazo_url = " + jsonDict["gazo_url"]);
 			url = jsonDict ["gazo_url"].ToString ();
-			GameObject instance = Instantiate (Resources.Load ("SphereMovie")) as GameObject;
-			instance.transform.position = new Vector3 (0.0f, 0.0f, 0.0f);
 
 			var jsonDict2 = jsonDict ["zahyo"] as Dictionary<string,object>;
 			Debug.Log("x = " + jsonDict2["x"]);
@@ -45,6 +43,10 @@ public class RoomLayout : MonoBehaviour {
 			float z = float.Parse(jsonDict2 ["z"].ToString());
 			Vector3 cameraPos = new Vector3(x, y, z);
 			SetCameraPos (cameraPos);
+
+			//全天球画像の表示
+			GameObject instance = Instantiate (Resources.Load ("SphereMovie")) as GameObject;
+			instance.transform.position = cameraPos;
 		}
 	}
 
