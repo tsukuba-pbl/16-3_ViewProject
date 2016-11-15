@@ -8,11 +8,11 @@
 - タスク管理サイト(プロダクトバックログ，タスクボード etc...)
   https://tree.taiga.io/project/hiwiqw-taaas/backlog
 
+![ロゴ](http://res.cloudinary.com/hm9te9vxa/image/upload/v1479192508/na52vbagwfqenzs5urvs.png)
+
 # 16-3_ViewProject
 家具の配置された部屋を見るためのスマートフォンアプリケーション
 スマートフォン上に配置された部屋のHMD用の映像を出力させる
-
-![ロゴ](http://res.cloudinary.com/hm9te9vxa/image/upload/v1479192508/na52vbagwfqenzs5urvs.png)
 
 # 開発環境
 - Unity 5.3.1
