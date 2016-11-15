@@ -1,15 +1,18 @@
-# 16-3_ViewProject
-家具の配置された部屋を見るためのアプリ
+# VR新生活
+- スマホ用リポジトリ
+  ここです
+- バックエンド用リポジトリ
+  https://github.com/tsukuba-pbl/16-3_rails
+- webフロント用リポジトリ
+  https://github.com/tsukuba-pbl/16-3_Web
+- タスク管理サイト(プロダクトバックログ，タスクボード etc...)
+  https://tree.taiga.io/project/hiwiqw-taaas/backlog
 
+# 16-3_ViewProject
+家具の配置された部屋を見るためのスマートフォンアプリケーション
 スマートフォン上に配置された部屋のHMD用の映像を出力させる
 
-ナーブ株式会社のVR賃貸を参考に開発中
-
-WEBサイト : http://www.nurve.jp/
-
-VR賃貸動画 : https://youtu.be/GwPFJ75G9UQ
-
-![ロゴ](http://res.cloudinary.com/hm9te9vxa/image/upload/v1478356296/p7ztiletx3pzr74zenck.png)
+![ロゴ](http://res.cloudinary.com/hm9te9vxa/image/upload/v1479192508/na52vbagwfqenzs5urvs.png)
 
 # 開発環境
 - Unity 5.3.1
