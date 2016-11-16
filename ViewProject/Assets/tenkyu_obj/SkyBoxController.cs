@@ -20,5 +20,8 @@ public class SkyBoxController : MonoBehaviour {
 		// assign texture
 		Renderer renderer = GetComponent<Renderer>();
 		renderer.material.mainTexture = www.texture;
+
+		//家具データの読み込みと配置
+		GameObject instance = Instantiate (Resources.Load ("SetFurniture")) as GameObject;
 	}
 }
