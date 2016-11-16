@@ -1,10 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LoadFurniture.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Furniture Pack 1 Free\Scripts\MouseOrbitZoom.js">
     <Files>
+      <File FileName="Assets\Furniture Pack 1 Free\Scripts\MouseOrbitZoom.js" Line="22" Column="1" />
       <File FileName="Assets\Scripts\RoomLayout.cs" Line="1" Column="1" />
       <File FileName="Assets\tenkyu_obj\SkyBoxController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\LoadFurniture.cs" Line="47" Column="48" />
+      <File FileName="Assets\Scripts\LoadFurniture.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
