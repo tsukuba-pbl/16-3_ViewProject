@@ -5,6 +5,8 @@ Project("{1E219AA2-10F0-DA4F-12BE-6E2576CFB8DA}") = "ViewProject", "Assembly-CSh
 EndProject
 Project("{1E219AA2-10F0-DA4F-12BE-6E2576CFB8DA}") = "ViewProject", "Assembly-CSharp-Editor.csproj", "{CCED0CF7-7D00-D6B2-11D9-A1AD38D22069}"
 EndProject
+Project("{1E219AA2-10F0-DA4F-12BE-6E2576CFB8DA}") = "ViewProject", "Assembly-UnityScript.unityproj", "{A30A261B-A0AF-5651-BABE-1EC1573056D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{CCED0CF7-7D00-D6B2-11D9-A1AD38D22069}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCED0CF7-7D00-D6B2-11D9-A1AD38D22069}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCED0CF7-7D00-D6B2-11D9-A1AD38D22069}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A30A261B-A0AF-5651-BABE-1EC1573056D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A30A261B-A0AF-5651-BABE-1EC1573056D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A30A261B-A0AF-5651-BABE-1EC1573056D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A30A261B-A0AF-5651-BABE-1EC1573056D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
