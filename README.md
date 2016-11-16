@@ -19,6 +19,8 @@
 シミュレーション映像を提供することで、引っ越しをする方が引っ越し後の生活イメージを体験できるようにするシステム
 「VR新生活」を提案しています。
 
+![ロゴ2](http://res.cloudinary.com/hm9te9vxa/image/upload/v1479309262/m7qtbaucgoy29gd6kezm.png)
+
 # 16-3_ViewProject
 家具の配置された部屋を見るためのスマートフォンアプリケーション
 スマートフォン上に配置された部屋のHMD用の映像を出力させる
@@ -43,6 +45,4 @@
 - heroku https://salty-fortress-26407.herokuapp.com/uxsers/
 - cloudinary 全天球画像用ファイルサーバ
 
-# 全天球画像 サンプル
-![全天球画像](http://res.cloudinary.com/hm9te9vxa/image/upload/v1477538556/ojkmrjystcgtfqxu2fvw.jpg)
 
