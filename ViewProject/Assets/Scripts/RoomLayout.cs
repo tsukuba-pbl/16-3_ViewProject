@@ -41,12 +41,12 @@ public class RoomLayout : MonoBehaviour {
 			float x = float.Parse(jsonDict2["x"].ToString());
 			float y = float.Parse(jsonDict2["y"].ToString());
 			float z = float.Parse(jsonDict2 ["z"].ToString());
-			Vector3 cameraPos = new Vector3(x, y, z);
-			SetCameraPos (cameraPos);
+			//Vector3 cameraPos = new Vector3(x, y, z);
+			//SetCameraPos (cameraPos);
 
 			//全天球画像の表示
 			GameObject instance = Instantiate (Resources.Load ("SphereMovie")) as GameObject;
-			instance.transform.position = cameraPos;
+			//instance.transform.position = cameraPos;
 		}
 	}
 
