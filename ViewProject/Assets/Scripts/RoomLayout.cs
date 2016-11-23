@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class RoomLayout : MonoBehaviour {
 
-	private string path = "https://salty-fortress-26407.herokuapp.com/uxsers/9.json";
+	private string path = "https://salty-fortress-26407.herokuapp.com/uxsers/14.json";
 	public static string url = null;
 
 	//カメラオブジェクト
