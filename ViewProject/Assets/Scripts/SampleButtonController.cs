@@ -31,6 +31,7 @@ public class SampleButtonController : BaseButtonController
 	private void Button1Click()
 	{
 		Debug.Log("Button1 Click");
+		GV.bFurniture = false;
 		Application.LoadLevel("Main");
 
 	}
@@ -38,6 +39,7 @@ public class SampleButtonController : BaseButtonController
 	private void Button2Click()
 	{
 		Debug.Log("Button2 Click");
+		GV.bFurniture = true;
 		Application.LoadLevel("Main");
 	}
 }

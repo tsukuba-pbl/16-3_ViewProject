@@ -70,7 +70,9 @@
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardiOSDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
      <Compile Include="Assets\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Scripts\BackButton.cs" />
      <Compile Include="Assets\Scripts\BaseButtonController.cs" />
+     <Compile Include="Assets\Scripts\GV.cs" />
      <Compile Include="Assets\Scripts\LoadFurniture.cs" />
      <Compile Include="Assets\Scripts\MiniJSON.cs" />
      <Compile Include="Assets\Scripts\RoomLayout.cs" />
