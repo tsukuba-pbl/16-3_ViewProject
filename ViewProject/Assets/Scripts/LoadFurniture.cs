@@ -4,7 +4,7 @@ using MiniJSON;
 using System.Collections.Generic;
 
 public class LoadFurniture : MonoBehaviour {
-	private string path = "https://salty-fortress-26407.herokuapp.com/layouts/1.json";
+	private string path = "https://salty-fortress-26407.herokuapp.com/ft_layouts/last.json";
 
 	// Use this for initialization
 	IEnumerator Start () {
@@ -21,18 +21,19 @@ public class LoadFurniture : MonoBehaviour {
 
 				}
 
-				//Debug.Log(www.text);
+				Debug.Log(www.text);
 
 				//受信した家具配置情報をパースする
 				var jsonDict = Json.Deserialize (www.text) as Dictionary<string,object>;
 				var jsonDict2 = jsonDict ["contents"] as  Dictionary<string,object>;
 				int idLayout = int.Parse (jsonDict2 ["layout_id"].ToString ()); //レイアウトIDの格納
-				//Debug.Log (idLayout);
+				Debug.Log (idLayout);
 
 				//家具の種類と座標をパースし，配置する
 				List<object> list = (List<object>)jsonDict2 ["placed_furniture_items"];
 				for (int i = 0; i < list.Count; i++) {
 					var test = ((List<object>)jsonDict2 ["placed_furniture_items"]) [i] as Dictionary<string,object>;
+					/*
 					//回転成分の格納
 					float a = float.Parse (test ["a_rotation"].ToString ());
 					float b = float.Parse (test ["b_rotation"].ToString ());
@@ -46,18 +47,33 @@ public class LoadFurniture : MonoBehaviour {
 					//家具の種別の格納
 					int furniture_item_id = int.Parse (test ["furniture_item_id"].ToString ());
 					Debug.Log ("item id = " + furniture_item_id);
+					*/
+					//回転成分の格納
+					float x = float.Parse (test ["top"].ToString ());
+					float y = 0.0f;
+					float z = float.Parse (test ["left"].ToString ());
+					Debug.Log ("Position = (" + x + "," + y + "," + z + ")");
+					//回転成分の格納
+					float a = 0.0f;
+					float b = float.Parse (test ["deg"].ToString ());
+					float c = 0.0f;
+					Debug.Log ("Rotation = (" + a + "," + b + "," + c + ")");
+					//家具の種別の格納
+					int furniture_item_id = int.Parse (test ["furniture_item_id"].ToString ());
+					Debug.Log ("item id = " + furniture_item_id);
+
 					//家具のロードと配置
 					GameObject instance = null;
 					string furniture_name = null;
 					switch (furniture_item_id) {
 					case 1:
-						furniture_name = "bed1";
+						furniture_name = "Chair";
 						break;
 					case 2:
 						furniture_name = "bed2";
 						break;
 					case 3:
-						furniture_name = "Chair";
+						furniture_name = "bed1";
 						break;
 					case 4:
 						furniture_name = "Glass_table";

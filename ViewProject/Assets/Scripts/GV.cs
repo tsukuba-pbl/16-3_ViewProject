@@ -2,5 +2,5 @@
 using System.Collections;
 
 public class GV  {
-	public static bool bFurniture = false;
+	public static bool bFurniture = true;
 }
