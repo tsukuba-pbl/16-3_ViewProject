@@ -1,15 +1,33 @@
-# 16-3_ViewProject
-家具の配置された部屋を見るためのアプリ
+# VR新生活
+- スマホ用リポジトリ
+  ここです
+- バックエンド用リポジトリ
+  https://github.com/tsukuba-pbl/16-3_rails
+- webフロント用リポジトリ
+  https://github.com/tsukuba-pbl/16-3_Web
+- タスク管理サイト(プロダクトバックログ，タスクボード etc...)
+  https://tree.taiga.io/project/hiwiqw-taaas/backlog
 
+![ロゴ](http://res.cloudinary.com/hm9te9vxa/image/upload/v1479192508/na52vbagwfqenzs5urvs.png)
+
+# 概要
+ 新生活を始める準備として、引っ越し先のアパートやマンション選びはとても重要です。
+実際に引っ越しを経験した方は、不動産屋で部屋の写真を見たり、実際に物件に行き内見をしたりしたことが
+あると思います。しかし、実際に引っ越しをして部屋に家具を配置してみると、思ってたよりも部屋が狭く感じたり、
+イメージが違っていたりすることがあります。
+ そこで、我々チームラッダイトは、バーチャルリアリティ技術を用い、物件の部屋にお気に入りの家具を配置した
+シミュレーション映像を提供することで、引っ越しをする方が引っ越し後の生活イメージを体験できるようにするシステム
+「VR新生活」を提案しています。
+
+![ロゴ2](http://res.cloudinary.com/hm9te9vxa/image/upload/v1479309262/m7qtbaucgoy29gd6kezm.png)
+
+# 16-3_ViewProject
+家具の配置された部屋を見るためのスマートフォンアプリケーション
 スマートフォン上に配置された部屋のHMD用の映像を出力させる
 
-ナーブ株式会社のVR賃貸を参考に開発中
+![HMD映像](http://res.cloudinary.com/hm9te9vxa/image/upload/v1479975715/ydsi3t13w0dlrknyzb7g.png)
+表示されるシミュレーション映像
 
-WEBサイト : http://www.nurve.jp/
-
-VR賃貸動画 : https://youtu.be/GwPFJ75G9UQ
-
-![ロゴ](http://res.cloudinary.com/hm9te9vxa/image/upload/v1478356296/p7ztiletx3pzr74zenck.png)
 
 # 開発環境
 - Unity 5.3.1
@@ -31,6 +49,4 @@ VR賃貸動画 : https://youtu.be/GwPFJ75G9UQ
 - heroku https://salty-fortress-26407.herokuapp.com/uxsers/
 - cloudinary 全天球画像用ファイルサーバ
 
-# 全天球画像 サンプル
-![全天球画像](http://res.cloudinary.com/hm9te9vxa/image/upload/v1477538556/ojkmrjystcgtfqxu2fvw.jpg)
 
