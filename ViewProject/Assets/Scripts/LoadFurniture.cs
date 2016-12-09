@@ -70,19 +70,19 @@ public class LoadFurniture : MonoBehaviour {
 						furniture_name = "Chair";
 						break;
 					case 2:
-						furniture_name = "bed2";
+						furniture_name = "table";
 						break;
 					case 3:
-						furniture_name = "bed1";
-						break;
-					case 4:
 						furniture_name = "Glass_table";
 						break;
-					case 5:
+					case 4:
 						furniture_name = "sek";
 						break;
+					case 5:
+						furniture_name = "bed2";
+						break;
 					case 6:
-						furniture_name = "table";
+						furniture_name = "bed1";
 						break;
 					default:
 						furniture_name = null;
