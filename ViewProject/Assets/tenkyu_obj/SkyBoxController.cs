@@ -25,5 +25,6 @@ public class SkyBoxController : MonoBehaviour {
 		GameObject setfurnobj = GameObject.Find("SetFurniture");
 		LoadFurniture loader = setfurnobj.GetComponent<LoadFurniture> ();
 		loader.reloadlayout ();
+
 	}
 }

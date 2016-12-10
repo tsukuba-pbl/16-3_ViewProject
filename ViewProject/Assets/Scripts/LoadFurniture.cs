@@ -6,6 +6,8 @@ using System.Collections.Generic;
 public class LoadFurniture : MonoBehaviour {
 	private string path = "https://salty-fortress-26407.herokuapp.com/ft_layouts/last.json";
 
+	private List<GameObject>furnitureInstanceList = new List<GameObject>();
+
 	// Use this for initialization
 	void Start () {
 		
@@ -13,6 +15,14 @@ public class LoadFurniture : MonoBehaviour {
 
 	public void reloadlayout(){
 		StartCoroutine ("loadlayout");
+	}
+
+	public void clearlayout(){
+		for (int i = 0; i < furnitureInstanceList.Count; i++) {
+			GameObject.Destroy (furnitureInstanceList[i]);
+		}
+		furnitureInstanceList = new List<GameObject>();
+		Debug.Log ("aaaaaaaaaaaaaaaaaaaaaa");
 	}
 
 	public IEnumerator loadlayout(){
@@ -97,6 +107,7 @@ public class LoadFurniture : MonoBehaviour {
 					}
 					if (furniture_name != null) {
 						instance = Instantiate (Resources.Load (furniture_name)) as GameObject;
+						furnitureInstanceList.Add (instance);
 						Vector3 p = new Vector3 (x, y, z);
 						instance.transform.position = p;
 						instance.transform.rotation = Quaternion.Euler (a, b, c);
