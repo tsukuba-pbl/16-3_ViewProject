@@ -8,7 +8,7 @@ public class LoadFurniture : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		StartCoroutine ("loadlayout");
+		
 	}
 
 	public void reloadlayout(){
