@@ -4,8 +4,13 @@ using MiniJSON;
 using System.Collections.Generic;
 
 public class RoomLayout : MonoBehaviour {
+	
+	//喫煙室enpit用
+	//private string path = "https://salty-fortress-26407.herokuapp.com/uxsers/21.json";
 
-	private string path = "https://salty-fortress-26407.herokuapp.com/uxsers/21.json";
+	//軽量全天周画像
+	private string path = "https://salty-fortress-26407.herokuapp.com/uxsers/20.json";
+
 	public static string url = null;
 
 	//カメラオブジェクト
