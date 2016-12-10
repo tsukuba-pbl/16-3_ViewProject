@@ -7,8 +7,11 @@ public class LoadFurniture : MonoBehaviour {
 	private string path = "https://salty-fortress-26407.herokuapp.com/ft_layouts/last.json";
 
 	// Use this for initialization
-	IEnumerator Start () {
+	void Start () {
+		StartCoroutine ("loadlayout");
+	}
 
+	public IEnumerator loadlayout(){
 		if (GV.bFurniture == true) {
 			using (WWW www = new WWW (path)) {
 
