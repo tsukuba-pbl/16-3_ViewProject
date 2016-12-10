@@ -11,6 +11,10 @@ public class LoadFurniture : MonoBehaviour {
 		StartCoroutine ("loadlayout");
 	}
 
+	public void reloadlayout(){
+		StartCoroutine ("loadlayout");
+	}
+
 	public IEnumerator loadlayout(){
 		if (GV.bFurniture == true) {
 			using (WWW www = new WWW (path)) {
