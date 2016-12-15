@@ -1,12 +1,20 @@
 # VR新生活
+
+![ヘッダー](https://media.taiga.io/attachments/5/0/f/3/79429195aa6ebfeb3270acb8098a9c7b01c85e214621af730100cabf7c41/head.png)
+
+
+# 各種リンク
+- ランディングページ
+  https://peraichi.com/landing_pages/view/4hf0v
+- タスク管理サイト(プロダクトバックログ，タスクボード etc...)
+  https://tree.taiga.io/project/hiwiqw-taaas/backlog
 - スマホ用リポジトリ
   ここです
 - バックエンド用リポジトリ
   https://github.com/tsukuba-pbl/16-3_rails
 - webフロント用リポジトリ
   https://github.com/tsukuba-pbl/16-3_Web
-- タスク管理サイト(プロダクトバックログ，タスクボード etc...)
-  https://tree.taiga.io/project/hiwiqw-taaas/backlog
+
 
 ![ロゴ](http://res.cloudinary.com/hm9te9vxa/image/upload/v1479192508/na52vbagwfqenzs5urvs.png)
 
