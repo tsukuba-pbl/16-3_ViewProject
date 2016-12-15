@@ -29,10 +29,6 @@
 家具の配置された部屋を見るためのスマートフォンアプリケーション
 スマートフォン上に配置された部屋のHMD用の映像を出力させる
 
-![HMD映像](http://res.cloudinary.com/hm9te9vxa/image/upload/v1479975715/ydsi3t13w0dlrknyzb7g.png)
-表示されるシミュレーション映像
-
-
 # 開発環境
 - Unity 5.3.1
 - Android Studio 1.0 and 2.0
