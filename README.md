@@ -1,7 +1,4 @@
-# VR新生活
-
 ![ヘッダー](https://media.taiga.io/attachments/5/0/f/3/79429195aa6ebfeb3270acb8098a9c7b01c85e214621af730100cabf7c41/head.png)
-
 
 # 各種リンク
 - ランディングページ
@@ -15,9 +12,6 @@
 - webフロント用リポジトリ
   https://github.com/tsukuba-pbl/16-3_Web
 
-
-![ロゴ](http://res.cloudinary.com/hm9te9vxa/image/upload/v1479192508/na52vbagwfqenzs5urvs.png)
-
 # 概要
  新生活を始める準備として、引っ越し先のアパートやマンション選びはとても重要です。
 実際に引っ越しを経験した方は、不動産屋で部屋の写真を見たり、実際に物件に行き内見をしたりしたことが
@@ -27,7 +21,9 @@
 シミュレーション映像を提供することで、引っ越しをする方が引っ越し後の生活イメージを体験できるようにするシステム
 「VR新生活」を提案しています。
 
-![ロゴ2](http://res.cloudinary.com/hm9te9vxa/image/upload/v1479309262/m7qtbaucgoy29gd6kezm.png)
+# 特徴
+![特徴1](https://media.taiga.io/attachments/a/8/2/8/746187736eb12444c80abb57ac66447755b52af6cc072d9f4d0eb885e396/te-zheng-1.png)
+![特徴2](https://media.taiga.io/attachments/4/f/8/b/9902401a4b271276fbb9ca397b954616b907f485513badf139dda144b5c8/te-zheng-2.png)
 
 # 16-3_ViewProject
 家具の配置された部屋を見るためのスマートフォンアプリケーション
