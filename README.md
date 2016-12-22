@@ -55,3 +55,4 @@
 ---
 ![フッダー](https://media.taiga.io/attachments/0/9/0/d/a7c7f9692bd302008193612e672316a53635f3200f75c9cd441203e2b912/foot.png)
 
+# 不動産会社の人も画面を共有
