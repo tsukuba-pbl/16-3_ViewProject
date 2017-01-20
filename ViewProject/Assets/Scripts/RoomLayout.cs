@@ -4,12 +4,13 @@ using MiniJSON;
 using System.Collections.Generic;
 
 public class RoomLayout : MonoBehaviour {
-	
+
 	//喫煙室enpit用
 	//private string path = "https://salty-fortress-26407.herokuapp.com/uxsers/21.json";
+	private string path = "https://salty-fortress-26407.herokuapp.com/uxsers/23.json";
 
 	//軽量全天周画像
-	private string path = "https://salty-fortress-26407.herokuapp.com/uxsers/20.json";
+	//private string path = "https://salty-fortress-26407.herokuapp.com/uxsers/20.json";
 
 	public static string url = null;
 
@@ -49,9 +50,14 @@ public class RoomLayout : MonoBehaviour {
 			Vector3 cameraPos = new Vector3(x, y, z);
 			SetCameraPos (cameraPos);
 
+			//全天球画像のの回転角度
+			float offset = float.Parse(jsonDict["offset"].ToString());
+
 			//全天球画像の表示
 			GameObject instance = Instantiate (Resources.Load ("SphereMovie")) as GameObject;
 			instance.transform.position = cameraPos;
+			Vector3 rot = new Vector3 (270.0f, offset, 0.0f);
+			instance.transform.Rotate (rot);
 		}
 	}
 
