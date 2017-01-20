@@ -93,13 +93,13 @@ public class LoadFurniture : MonoBehaviour {
 						furniture_name = "Glass_table";
 						break;
 					case 4:
-						furniture_name = "sek";
+						furniture_name = "bed1";
 						break;
 					case 5:
 						furniture_name = "bed2";
 						break;
 					case 6:
-						furniture_name = "bed1";
+						furniture_name = "sek";
 						break;
 					default:
 						furniture_name = null;
