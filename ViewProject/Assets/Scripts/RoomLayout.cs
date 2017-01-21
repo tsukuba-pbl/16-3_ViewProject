@@ -7,7 +7,8 @@ public class RoomLayout : MonoBehaviour {
 
 	//喫煙室enpit用
 	//private string path = "https://salty-fortress-26407.herokuapp.com/uxsers/21.json";
-	private string path = "https://salty-fortress-26407.herokuapp.com/uxsers/23.json";
+	//private string path = "https://salty-fortress-26407.herokuapp.com/uxsers/23.json";
+	private string path = null;
 
 	//軽量全天周画像
 	//private string path = "https://salty-fortress-26407.herokuapp.com/uxsers/20.json";
@@ -17,8 +18,21 @@ public class RoomLayout : MonoBehaviour {
 	//カメラオブジェクト
 	public GameObject MainCamera;
 
+	void Start () {
+		
+	}
+
+	public void SetImageId(int id){
+		this.path = "https://salty-fortress-26407.herokuapp.com/uxsers/" + id.ToString() + ".json";
+		Debug.Log ("SetImagePath = " + path);
+	}
+
+	public void SetImage(){
+		StartCoroutine ("LoadImage");
+	}
+
 	// Use this for initialization
-	IEnumerator Start () {
+	IEnumerator LoadImage () {
 
 		using(WWW www = new WWW(path)){
 
