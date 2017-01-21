@@ -21,10 +21,5 @@ public class SkyBoxController : MonoBehaviour {
 		Renderer renderer = GetComponent<Renderer>();
 		renderer.material.mainTexture = www.texture;
 
-		//家具データの読み込みと配置
-		GameObject setfurnobj = GameObject.Find("SetFurniture");
-		LoadFurniture loader = setfurnobj.GetComponent<LoadFurniture> ();
-		loader.reloadlayout ();
-
 	}
 }
