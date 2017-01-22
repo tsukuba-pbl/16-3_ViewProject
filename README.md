@@ -3,6 +3,10 @@
 # 各種リンク
 - ランディングページ
   https://peraichi.com/landing_pages/view/4hf0v
+- 物件管理画面トップページ
+  https://salty-fortress-26407.herokuapp.com/
+- レイアウト物件選択ページ
+  https://arcane-bastion-64243.herokuapp.com/Front%20End/index.html
 - タスク管理サイト(プロダクトバックログ，タスクボード etc...)
   https://tree.taiga.io/project/hiwiqw-taaas/backlog
 - スマホ用リポジトリ
