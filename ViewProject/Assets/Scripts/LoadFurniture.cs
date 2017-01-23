@@ -97,6 +97,9 @@ public class LoadFurniture : MonoBehaviour {
 					case 6:
 						furniture_name = "sek";
 						break;
+					case 7:
+						furniture_name = "bed3";
+						break;
 					default:
 						furniture_name = null;
 						break;
