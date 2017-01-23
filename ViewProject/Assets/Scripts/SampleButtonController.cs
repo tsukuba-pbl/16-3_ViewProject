@@ -32,7 +32,7 @@ public class SampleButtonController : BaseButtonController
 	{
 		Debug.Log("Button1 Click");
 		GV.bFurniture = false;
-		Application.LoadLevel("Main");
+		Application.LoadLevel("Main_Android");
 
 	}
 
@@ -40,6 +40,6 @@ public class SampleButtonController : BaseButtonController
 	{
 		Debug.Log("Button2 Click");
 		GV.bFurniture = true;
-		Application.LoadLevel("Main");
+		Application.LoadLevel("Main_Android");
 	}
 }
