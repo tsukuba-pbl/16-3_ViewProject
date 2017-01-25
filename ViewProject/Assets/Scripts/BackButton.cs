@@ -7,5 +7,9 @@ public class BackButton : MonoBehaviour {
 	public void OnClick() {
 		Debug.Log("Back Button click!");
 		Application.LoadLevel("start_menu");
+
+		GameObject objRotSender = GameObject.Find("RotSender") as GameObject;
+		RotSender RS = objRotSender.GetComponent<RotSender> ();
+		RS.ThreadAbort ();
 	}
 }

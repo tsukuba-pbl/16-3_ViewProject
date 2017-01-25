@@ -36,9 +36,6 @@ public class RotReceiver : MonoBehaviour {
 		str = qqq.w.ToString () + "j" + qqq.x.ToString () + "j" + qqq.y.ToString () + "j" + qqq.z.ToString () + "j";
 		m_Thread.Start ();
 		plpl = transform.rotation;
-
-
-
 	}
 
 	// Update is called once per frame

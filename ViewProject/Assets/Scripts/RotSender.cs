@@ -41,6 +41,11 @@ public class RotSender : MonoBehaviour {
 		m_Thread.Abort ();
 		Debug.Log ("qqqqqqqqqqqqqqqqqq");
 	}
+
+	public void ThreadAbort(){
+		m_Thread.Abort ();
+	}
+
 	private void threadWork(){
 		Debug.Log ("ggggggggggggggg");
 
