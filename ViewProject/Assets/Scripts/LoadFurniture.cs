@@ -10,7 +10,7 @@ public class LoadFurniture : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		reloadlayout ();
 	}
 
 	public void reloadlayout(){
@@ -26,7 +26,6 @@ public class LoadFurniture : MonoBehaviour {
 	}
 
 	public IEnumerator loadlayout(){
-		if (GV.bFurniture == true) {
 			using (WWW www = new WWW (path)) {
 
 				yield return www;
@@ -44,27 +43,24 @@ public class LoadFurniture : MonoBehaviour {
 				var jsonDict = Json.Deserialize (www.text) as Dictionary<string,object>;
 				var jsonDict2 = jsonDict ["contents"] as  Dictionary<string,object>;
 				int idLayout = int.Parse (jsonDict2 ["layout_id"].ToString ()); //レイアウトIDの格納
-				Debug.Log (idLayout);
 
+				//天球画像のidを取得
+				int gazo_id = int.Parse(jsonDict2["gazo_id"].ToString());
+				Debug.Log ("gazo_id = " + gazo_id);
+				GameObject RoomLayout_instance = GameObject.Find ("RoomLayout");
+				RoomLayout rl = RoomLayout_instance.GetComponent<RoomLayout> ();
+				rl.SetImageId (gazo_id);
+				rl.SetImage ();
+
+				//全天球画像の配置
+				GameObject tenkyu_instance = Instantiate (Resources.Load ("RoomLayout")) as GameObject;
+
+			if (GV.bFurniture == true) {
 				//家具の種類と座標をパースし，配置する
 				List<object> list = (List<object>)jsonDict2 ["placed_furniture_items"];
 				for (int i = 0; i < list.Count; i++) {
 					var test = ((List<object>)jsonDict2 ["placed_furniture_items"]) [i] as Dictionary<string,object>;
-					/*
-					//回転成分の格納
-					float a = float.Parse (test ["a_rotation"].ToString ());
-					float b = float.Parse (test ["b_rotation"].ToString ());
-					float c = float.Parse (test ["c_rotation"].ToString ());
-					Debug.Log ("Rotation = (" + a + "," + b + "," + c + ")");
-					//座標成分の格納
-					float x = float.Parse (test ["x_coordinate_data"].ToString ());
-					float y = float.Parse (test ["y_coordinate_data"].ToString ());
-					float z = float.Parse (test ["z_coordinate_data"].ToString ());
-					Debug.Log ("Position = (" + x + "," + y + "," + z + ")");
-					//家具の種別の格納
-					int furniture_item_id = int.Parse (test ["furniture_item_id"].ToString ());
-					Debug.Log ("item id = " + furniture_item_id);
-					*/
+
 					//回転成分の格納
 					float x = float.Parse (test ["top"].ToString ());
 					float y = 0.0f;
@@ -100,6 +96,24 @@ public class LoadFurniture : MonoBehaviour {
 						break;
 					case 6:
 						furniture_name = "sek";
+						break;
+					case 7:
+						furniture_name = "bed3";
+						break;
+					case 8:
+						furniture_name = "bed5";
+						break;
+					case 9:
+						furniture_name = "Bookself1";
+						break;
+					case 10:
+						furniture_name = "table3";
+						break;
+					case 11:
+						furniture_name = "sofa1";
+						break;
+					case 12:
+						furniture_name = "TV";
 						break;
 					default:
 						furniture_name = null;

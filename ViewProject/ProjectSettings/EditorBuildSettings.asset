@@ -6,8 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/start_menu.unity
+  - enabled: 0
     path: Assets/Main.unity
   - enabled: 0
     path: Assets/Test1.unity
+  - enabled: 0
+    path: Assets/Main_PC.unity
   - enabled: 1
-    path: Assets/start_menu.unity
+    path: Assets/Main_Android.unity
