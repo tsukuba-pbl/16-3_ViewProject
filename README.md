@@ -8,7 +8,7 @@
 - スマホ用リポジトリ
   ここです
 - バックエンド用リポジトリ
-  https://github.com/tsukuba-pbl/16-3_rails
+  https://github.com/tsukuba-pbl/16-3_rails_s_2
 - webフロント用リポジトリ
   https://github.com/tsukuba-pbl/16-3_Web
 
