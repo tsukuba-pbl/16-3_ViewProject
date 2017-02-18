@@ -2,6 +2,7 @@
 using System.Collections;
 using MiniJSON;
 using System.Collections.Generic;
+using System;
 
 public class RoomLayout : MonoBehaviour {
 
@@ -50,6 +51,13 @@ public class RoomLayout : MonoBehaviour {
 			Debug.Log("id = " + jsonDict["id"]);
 			Debug.Log("gazo_url = " + jsonDict["gazo_url"]);
 			url = jsonDict ["gazo_url"].ToString ();
+
+			//画像urlをhttpからhttpsに変更する
+			string[] url_parse = url.Split(new []{"://"}, StringSplitOptions.None);
+			string sslUrl = "https://" + url_parse [1];
+			Debug.Log (sslUrl);
+			url = sslUrl;
+			/////////////////////////////////
 
 			var jsonDict2 = jsonDict ["zahyo"] as Dictionary<string,object>;
 			Debug.Log("x = " + jsonDict2["x"]);
