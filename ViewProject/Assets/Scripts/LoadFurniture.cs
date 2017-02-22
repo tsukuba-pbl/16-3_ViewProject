@@ -10,6 +10,7 @@ public class LoadFurniture : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		path = "https://salty-fortress-26407.herokuapp.com/ft_layouts/" + GV.demo_layout_id.ToString () + ".json";
 		reloadlayout ();
 	}
 
